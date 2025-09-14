@@ -1,0 +1,219 @@
+# Compiled output
+**/dist/
+**/build/
+**/lib/
+**/out/
+**/tmp/
+**/temp/
+
+# Dependencies
+**/node_modules/
+**/jspm_packages/
+**/.pnp
+**/.pnp.js
+
+# Logs
+**/*.log
+**/logs/
+**/npm-debug.log*
+**/pnpm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/lerna-debug.log*
+
+# Runtime data
+**/pids/
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+**/coverage/
+**/.nyc_output/
+**/*.lcov
+
+# Tests
+**/test-results/
+**/playwright-report/
+**/test-results/
+
+# Environment variables
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.*.local
+
+# Database files
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.db3
+**/data/
+**/database/
+
+# Cache files
+**/.eslintcache
+**/.stylelintcache
+**/.parcel-cache/
+**/.cache/
+**/tsconfig.tsbuildinfo
+**/*.tsbuildinfo
+
+# Temporary files
+**/*.tmp
+**/*.temp
+**/*.swp
+**/*.swo
+**/*~
+
+# OS generated files
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+# IDEs and editors
+**/.idea/
+**/.vscode/
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+**/.project
+**/.classpath
+**/.c9/
+**/*.launch
+**/.settings/
+**/*.sublime-workspace
+**/*.sublime-project
+
+# Yarn
+**/.yarn/cache
+**/.yarn/unplugged
+**/.yarn/build-state.yml
+**/.yarn/install-state.gz
+**/.pnp.*
+**/.yarn/
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+
+# Package manager lock files (선택적으로 포함할 수도 있음)
+# **/package-lock.json
+# **/yarn.lock
+# **/pnpm-lock.yaml
+
+# Build outputs for different frameworks
+**/.next/
+**/.nuxt/
+**/dist/
+**/build/
+**/public/build/
+**/storybook-static/
+
+# Prisma (if using Prisma ORM)
+**/prisma/dev.db
+**/prisma/migrations/dev/
+**/prisma/.env
+
+# TypeORM (if using TypeORM)
+**/ormconfig.json
+**/migration/
+**/migrations/
+
+# Sequelize (if using Sequelize)
+**/seeders/
+**/migrations/
+
+# NestJS specific
+**/nest-cli.json.bak
+
+# Uploads and user content
+**/uploads/
+**/public/uploads/
+**/static/uploads/
+**/assets/uploads/
+
+# SSL certificates
+**/*.pem
+**/*.key
+**/*.crt
+**/*.p12
+**/*.pfx
+
+# Documentation
+**/docs/build/
+**/documentation/
+
+# Docker
+**/.dockerignore
+**/Dockerfile.dev
+**/docker-compose.override.yml
+
+# Local configuration
+**/config/local.json
+**/config/development.json
+**/config/production.json
+**/local.json
+
+# PM2
+**/ecosystem.config.js
+
+# Generated files
+**/generated/
+**/auto-generated/
+
+# Backup files
+**/*.bak
+**/*.backup
+**/*.orig
+
+# MacOS
+**/.AppleDouble
+**/.LSOverride
+
+# Windows
+**/desktop.ini
+**/$RECYCLE.BIN/
+
+# Linux
+**/.fuse_hidden*
+**/.directory
+**/.Trash-*/
+
+# JetBrains IDEs
+**/.idea/
+**/cmake-build-*/
+**/*.iws
+**/*.iml
+**/*.ipr
+
+# Visual Studio Code
+**/.vscode/
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+**/.history/
+
+# Vim
+**/*.swp
+**/*.swo
+**/*~
+
+# Emacs
+**/*~
+**/#*#
+**/.#*
+
+# Project specific ignores (customize as needed)
+**/secrets/
+**/private/
+**/local/
