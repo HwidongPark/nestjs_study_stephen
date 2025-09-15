@@ -6,18 +6,19 @@ const cookieSession = require('cookie-session');
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   
-  // cookie-session 사용
-  app.use(cookieSession({
-    // 비밀키
-    keys: ['secretKey'],
-  }));
+  // // cookie-session 사용
+  // app.use(cookieSession({
+  //   // 비밀키
+  //   keys: ['secretKey'],
+  // }));
 
-  // pipe 사용
-  app.useGlobalPipes(
-    new ValidationPipe({
-      whitelist: true,
-    })
-  )
+  // // pipe 사용
+  // app.useGlobalPipes(
+  //   new ValidationPipe({
+  //     whitelist: true,
+  //   })
+  // )
+   
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

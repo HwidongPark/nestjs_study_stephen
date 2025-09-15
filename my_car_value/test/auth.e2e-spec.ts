@@ -6,7 +6,7 @@ import { AppModule } from './../src/app.module';
 
 
 // Integration Test (End to End Test)
-describe('AppController (e2e)', () => {
+describe('Authentication System', () => {
   let app: INestApplication<App>;
 
   beforeEach(async () => {
@@ -18,10 +18,24 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
+
+  // ### 회원가입 테스트
+  it('handles a signup request', () => {
+    const emailToSignup = 'integrationTests23@asdflkasdf.com';
     return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+      .post('/auth/signup')
+      .send({
+        email: emailToSignup,
+        password: 'asdf'
+      })
+      .expect(201)
+      .then((res) => {
+        const { id, email } = res.body;
+        
+        expect(id).toBeDefined;
+        expect(email).toEqual(emailToSignup);
+
+      })
   });
+
 });
